@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,900;1,200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Titillium web' , sans-serifs;
+    text-rendering: optimizeLegibility;
+    line-height: 1.4;
+}
+html{
+    font-size: 50%;
+    scroll-behavior: smooth;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* .clearfix::after{
+    content: "";
+    display: table;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+} */
+/* ================== */
+    /* REUSUEABLE */
+/* ==================  */
+.row{
+    max-width: 114rem;
+    margin: 0 auto;
+}
+section{
+    padding: 10rem 0;
+}
+.box{
+    text-align: center;
+}
+.box p{
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 200;
+    max-width: 20rem;
+    margin: auto;
+}
+.hline{
+    width: 9rem;
+    height: .5rem;
+    background-color: #14a58c;
+    display: inline-block;
+    margin: 2rem 0;
+}
+/* ================== */
+    /* BUTTON */
+/* ==================  */
+.btn:link,
+.btn:visited,
+.btn{
+    padding: 2rem 6rem;
+    background-color: #333;
+    text-transform: uppercase;
+    color: #fff;
+    border-bottom: .4rem solid #000;
+    border-radius: .3rem;
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 1.8rem;
+
+}
+/* ================== */
+    /* HEADER */
+/* ==================  */
+header{
+    background: linear-gradient(rgba(135, 80, 156, 0.9),rgba(135, 80, 156, 0.9)), url('../img/hero-bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 85vh;
+    position: relative;
+}
+/* #navbar{
+    padding: 1.5rem 0;
+    width: 100%;
+    background-color: rgba(135, 80, 156, 1); 
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+} */
+
+.row .logo {
+    height: 4rem;
+    width: auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.row ul li{ 
+    list-style: none;
+    display: inline-block;
+    margin: 0 .5rem;
+}
+.row ul li:first-child{
+    margin-left: 0;
+}
+.row ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: .6rem 1.3rem;
+    color: #fff;
+    font-size: 1.6rem;
+    transition: all .4s ease;
+}
+.row ul li a.active,
+.row ul li a.link,
+.row ul li a.visited,
+.row ul li a:hover{
+    background-color: #643a79;
+    border-radius: .3rem;
+}
+
+/* ================== */
+    /* HERO-TEXT-BOX */
+/* ==================  */
+.hero-text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.hero-text-box h1{
+    color: #f7f3ea;
+    font-size: 4.2rem;
+    font-weight: 600;
+}
+
+.btn-hero:link,
+.btn-hero:visited{
+    background-color: #eb7d4b;
+    border-color:#c86a40;
+}
+
+/* ================== */
+    /* SERVICE */
+/* ==================  */
+#service{
+    background: #17c2a4;
+}
+.service-text-box{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.service-text-box h2{
+    font-size: 4rem;
+    color: #FFF;
+    letter-spacing: .5rem;
+    font-weight: 600;
+    
+}
+
+.service-text-box p{
+    font-size: 1.8rem;
+    color: #fff;
+    max-width: 60rem;
+    margin: auto;
+}
+
+#service .box h3{
+    font-weight: 600;
+    color: #fff;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+
+#service .flag{
+    margin-bottom: 4rem;
+    height: 12rem;
+}
+
+/* ================== */
+    /* TEAM */
+/* ==================  */
+#team{
+    background-color: #e7f1f8;
+}
+.team-text-box{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.team-text-box h2{
+    font-size: 4rem;
+    color: #333;
+    letter-spacing: .5rem;
+    font-weight: 600;
+    
+}
+.team-text-box p{
+    font-size: 1.8rem;
+    color: #333;
+    max-width: 60rem;
+    margin: auto;
+}
+#team .hline{
+    background-color: #c8d9e5;
+}
+.team{
+    max-width: 20rem;
+    height: 20rem;
+    border-radius: 100%;
+}
+#team .box h3{
+    font-weight: 600;
+    color: #333;
+    font-size: 2.4rem;
+    margin-top: 1.5rem;
+}
+#team .box small{
+    font-size: 1.6rem;
+    color: #48c1e9;
+    
+}
+#team .box p{
+    color: #47526b;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.social a{
+    width: 3.5rem;
+    height: 3.5rem;
+    display: inline-flex;
+    background-color: #bdd1df;
+    justify-content: center;
+    align-items: center;
+    margin: 0 .5rem;
+    border-radius: 100%;
+    border: .1rem solid #fff;
+    color: #FFF;
+    font-size: 1.5rem;
+    transition: all .5s ease;
+}
+.social a:hover{
+    transform: rotate(360deg);
+}
+/* ================== */
+    /* SKILL */
+/* ==================  */
+#skill{
+    background: linear-gradient(rgba(224, 226, 233, 0.9),rgba(224, 226, 233, 0.9)), url('../img/testimonial-bg.jpg');
+    background-position: center 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.skill-text-box{
+    text-align: center;
+    margin-bottom: 6rem;
+}
+.skill-text-box h2{
+    font-size: 4rem;
+    color: #3c4761;
+    letter-spacing: .5rem;
+    font-weight: 600;   
+}
+.skill-text-box p{
+    font-size: 1.8rem;
+    color: #3c4761;
+    max-width: 60rem;
+    margin: auto;
+}
+#skill .hline{
+    background-color: #dfe8ed;
+}
+#skill .box p{
+    color: black;
+}
+#skill h3{
+    font-size: 2.5rem;
+    color: #3c4761;
+    font-weight: 400; 
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+/* ================== */
+    /* PORTFOLIO */
+/* ==================  */
+#portfolio{
+    background-color: #ffdd99;
+    text-align: center;
+}
+.portfolio-text-box{
+    text-align: center;
+}
+.portfolio-text-box h2{
+    font-size: 4rem;
+    color: #3c4761;
+    letter-spacing: .5rem;
+    font-weight: 600;   
+}
+.portfolio-text-box p{
+    font-size: 1.8rem;
+    color: #3c4761;
+    max-width: 60rem;
+    margin: auto;
+}
+#portfolio .hline{
+    background-color: #e5c37f;
+}
+.portfolio-filter button{
+    background-color: #ebc985;
+    padding: .6rem 1.8rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin: 5rem .4rem;
+    border: 0;
+    border-radius: .3rem;
+    transition: all .4s ease;
+}
+.portfolio-filter button:hover{
+    box-shadow:inset 0 .3rem .5rem rgba(51, 51, 51, 0.336);
+    cursor: pointer;
+}
+.mixitup-control-active {
+    box-shadow: inset 0 0.3rem 0.5rem rgb(51 51 51 / 34%);
+}
+#portfolio .col:nth-of-type(3){
+    margin-left: 0;
+}
+.port-img{
+    width: 100%;
+    height: 30rem;
+}
+#portfolio .btn-port{
+    background-color: #17c2a4;
+    border-color: #14a58c;
+}
+/* ================== */
+    /* REVIEW */
+/* ==================  */
+#review{
+    background-color: #d74680;
+}
+.review-text-box{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.review-text-box h2{
+    font-size: 4rem;
+    color: #fff;
+    letter-spacing: .5rem;
+    font-weight: 600;   
+}
+.review-text-box p{
+    font-size: 1.8rem;
+    color: #fff;
+    max-width: 60rem;
+    margin: auto;
+}
+#review .hline{
+    background-color: #b73c6d;
+}
+#review .flex{
+    max-width: 48rem;
+    align-items: flex-start;
+}
+.revpic{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 100%;
+    margin-right: 2.5rem;
+}
+.text p{
+    font-style: italic;
+    font-size: 2.1rem;
+    color: #fff;
+}
+.text h3{
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    letter-spacing: .2rem;
+    color: #fff;
+}
+.text small{
+    font-size: 1.8rem;
+    color: #f7bf94;
+}
+#review .col{
+    margin-bottom: 5rem;
+}
+#review .col:nth-of-type(3){
+    margin-left: 0;
+    margin-bottom: 0;
+}
+#review .col:nth-of-type(4){
+    margin-bottom: 0;
+}
+/* ================== */
+    /* Contact*/
+/* ==================  */
+#contact{
+    background: linear-gradient(rgba(60, 83, 153, 0.9),rgb(60, 83, 153, 0.9)), url('../img/skill-bg.jpg');
+    background-position: center 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.contact-text-box{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.contact-text-box h2{
+    font-size: 4rem;
+    color: #fff;
+    letter-spacing: .5rem;
+    font-weight: 600;   
+}
+.contact-text-box p{
+    font-size: 1.8rem;
+    color: #fff;
+    margin: auto;
+}
+#contact .hline{
+    background-color: #273a71;
+}
+#contact form{
+    margin-top: 4rem;
+    width: 70%;
+    margin: auto;
+}
+#contact input[type=text],
+#contact input[type=email],
+#contact textarea{
+    width: 100%;
+    margin: .8rem 0;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    background-color: #273a71;
+    border: .1rem solid #273a71;
+    outline: none;
+    color: #FFF;
+    border-radius: 3px;
+    
+}
+#contact textarea{
+    height: 20rem;
+}
+#contact input[type=text]::placeholder,
+#contact input[type=email]::placeholder,
+#contact textarea::placeholder{
+    color: #fff;
+    opacity: 1;
+}
+.btn-submit{
+    border: 0;
+    border-bottom: .3rem solid #299ec5;
+    background-color: #30bae7;
+}
+/* ================== */
+    /* Contact*/
+/* ==================  */
+footer{
+    padding: 3rem 0;
+    text-align: center;
+    background-color: #344b8e;
+    border-top: .1rem solid rgba(255, 255, 255, 0.225);
+}
+footer a{
+    font-size: 2.4rem;
+    color: #fff;
+    margin:0 3rem;
+    text-transform: capitalize;
+}
+footer a:hover{
+    color: #30bae7;
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    padding: 30px 60px;
+    background: transparent !important;
+    z-index: 9;
+    transition: 250ms;
+}
+
+.navbar.nav-sticky {
+    padding: 20px 60px;
+    background: rgba(135, 80, 156, 0.9) !important;
+    transition: 250ms;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3)
+}
